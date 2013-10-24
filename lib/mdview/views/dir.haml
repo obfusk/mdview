@@ -1,0 +1,6 @@
+%ul.list-group
+  %li.list-group-item
+    %a{ href: link_to(@up) } ..
+  - @files.each do |f|
+    %li.list-group-item
+      %a{ href: link_to(f) }&= f

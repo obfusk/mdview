@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'mdview/sinatra'
+
+s = MDView::Sinatra
+s.set :port, ARGV.first || 8888
+s.run!

@@ -12,32 +12,27 @@
 ## Description
 []: {{{1
 
-  mdview - markdown preview + pdf
+  mdview - markdown preview
 
-  ...
+  mdview starts a web server that allows you to browse directories and
+  view `.md` files.
 
 []: }}}1
 
 ## Examples
 
-...
+    $ mdview        # run on localhost:8888
+    $ mdview 9999   # run on localhost:9999
 
 ## Specs & Docs
-[]: {{{1
 
     $ rake spec # TODO
     $ rake docs
 
-[]: }}}1
-
 ## TODO
-[]: {{{1
 
-  * build!
-  * more specs/docs?
+  * specs/docs?
   * ...
-
-[]: }}}1
 
 ## License
 []: {{{1

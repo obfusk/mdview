@@ -3,12 +3,13 @@ require File.expand_path('../lib/mdview/version', __FILE__)
 Gem::Specification.new do |s|
   s.name        = 'mdview'
   s.homepage    = 'https://github.com/obfusk/mdview'
-  s.summary     = 'markdown preview + pdf '
+  s.summary     = 'markdown preview'
 
   s.description = <<-END.gsub(/^ {4}/, '')
-    markdown preview + pdf
+    markdown preview
 
-    ...
+    mdview starts a web server that allows you to browse directories
+    and view `.md` files.
   END
 
   s.version     = MDView::VERSION
@@ -22,7 +23,7 @@ Gem::Specification.new do |s|
   s.executables = %w{ mdtopdf mdview }
   s.files       = %w{ .yardopts README.md Rakefile } \
                 + %w{ mdview.gemspec } \
-                + Dir['{lib,spec}/**/*.rb']
+                + Dir['{lib,spec}/**/*.{css,haml,rb}']
 
   s.add_runtime_dependency 'haml'
   s.add_runtime_dependency 'pygments.rb'
