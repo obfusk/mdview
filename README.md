@@ -9,6 +9,8 @@
 
 []: }}}1
 
+[![Gem Version](https://badge.fury.io/rb/mdview.png)](http://badge.fury.io/rb/mdview)
+
 ## Description
 []: {{{1
 
