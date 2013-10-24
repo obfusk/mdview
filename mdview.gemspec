@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.license     = 'GPLv2'
 
-  s.executables = %w{ mdtopdf mdview }
+  s.executables = %w{ mdview }
   s.files       = %w{ .yardopts README.md Rakefile } \
                 + %w{ mdview.gemspec } \
                 + Dir['{lib,spec}/**/*.{css,haml,rb}']
