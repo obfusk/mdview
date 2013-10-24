@@ -17,9 +17,14 @@ module MDView
   # redcarpet + pygments
   class RedPyg < Redcarpet::Render::HTML
     def block_code(code, lang)
-      Pygments.highlight(code, lexer: lang || 'text')
+      Pygments.highlight code, lexer: MDView.lang(lang)
     end
   end
+
+  # language aliases
+  ALIASES = {
+    'coffee' => 'coffeescript',
+  }
 
   # renderer
   MD = Redcarpet::Markdown.new(
@@ -30,6 +35,11 @@ module MDView
   # pygments css
   def self.css
     Pygments.css '.highlight', style: 'autumn'
+  end
+
+  # language w/ aliases
+  def self.lang(lang)
+    ALIASES.fetch(lang,lang) || 'text'
   end
 
   # render markdown
