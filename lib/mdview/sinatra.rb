@@ -40,7 +40,7 @@ class MDView::Sinatra < Sinatra::Base
     @up     = File.dirname dir
     @files  = Dir["#{dir}/*"].select do |x|
       File.directory?(x) || x.end_with?('.md')
-    end
+    end .sort
     haml :dir
   end
 
