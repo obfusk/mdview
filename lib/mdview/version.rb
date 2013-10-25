@@ -1,4 +1,4 @@
 module MDView
-  VERSION = '0.2.0'
-  DATE    = '2013-10-24'
+  VERSION = '0.3.0'
+  DATE    = '2013-10-25'
 end
